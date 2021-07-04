@@ -1,0 +1,36 @@
+div.picone {
+  position: fixed;
+  bottom: 40%;
+  right: 55%;
+  width: 300px;
+  height: 300px;
+}
+div.pictwo {
+  position: fixed;
+  bottom: 40%;
+  left: 55%;
+  width: 300px;
+  height: 300px;;
+}
+div.or {
+  position: fixed;
+  bottom: 50%;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+}
+.buttonone {
+  position: fixed;
+  right:55%;
+  bottom: 15%;
+}
+.buttontwo {
+  position: fixed;
+  left:55%;
+  bottom:15%;
+}
+
+div.a {
+  color: hotpink !important;
+  text-decoration: none !important;
+}  
