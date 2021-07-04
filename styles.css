@@ -22,12 +22,12 @@ div.or {
 .buttonone {
   position: fixed;
   right:55%;
-  bottom: 15%;
+  bottom: 5%;
 }
 .buttontwo {
   position: fixed;
   left:55%;
-  bottom:15%;
+  bottom:5%;
 }
 
 div.a {
