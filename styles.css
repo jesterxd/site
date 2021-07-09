@@ -36,6 +36,12 @@ div.ad1 {
   right: 95%;
 }
 
+div.ad2 {
+  position: fixed;
+  bottom: 10%;
+  left: 95%;
+}
+
 div.a {
   color: hotpink !important;
   text-decoration: none !important;
