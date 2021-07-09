@@ -39,7 +39,12 @@ div.ad1 {
 div.ad2 {
   position: fixed;
   bottom: 10%;
-  left: 85%;
+  left: 87.5%;
+}
+div.ad3 {
+  position: fixed;
+  bottom: 10%;
+  left: 81.5%;
 }
 
 div.a {
