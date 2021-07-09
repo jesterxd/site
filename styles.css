@@ -33,13 +33,13 @@ div.or {
 div.ad1 {
   position: fixed;
   bottom: 10%;
-  left: 95%;
+  right: 90%;
 }
 
 div.ad2 {
   position: fixed;
   bottom: 10%;
-  right: 95%;
+  left: 90%;
 }
 
 div.a {
