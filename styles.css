@@ -30,6 +30,12 @@ div.or {
   bottom:5%;
 }
 
+div.ad1 {
+  position: fixed;
+  bottom: 10%;
+  right: 95%;
+}
+
 div.a {
   color: hotpink !important;
   text-decoration: none !important;
