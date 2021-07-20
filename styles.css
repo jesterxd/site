@@ -2,15 +2,15 @@ div.picone {
   position: fixed;
   bottom: 30%;
   right: 55%;
-  width: 325px;
-  height: 325px;
+  width: 330px;
+  height: 300px;
 }
 div.pictwo {
   position: fixed;
   bottom: 30%;
   left: 55%;
-  width: 325px;
-  height: 325px;;
+  width: 330px;
+  height: 300px;;
 }
 div.or {
   position: fixed;
