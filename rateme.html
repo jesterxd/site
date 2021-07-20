@@ -33,6 +33,85 @@
 
 </div>
 <div class="ad1">
-<iframe
         
 </div>
+<script>
+jonData = 
+const values = Object.values(jonData)
+
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 37) { //left
+        myFunctionz();
+    }
+    else if(event.keyCode == 39) { //right
+        myFunction();
+    }
+    else if(event.keyCode == 65) { //a
+    myFunctionz();
+    }
+    else if(event.keyCode == 68) { //d
+    myFunction();
+    }
+});
+
+const linkOne = values[parseInt(Math.random() * values.length)]
+const linkTwo = values[parseInt(Math.random() * values.length)]
+
+JSON.stringify(linkOne);
+JSON.stringify(linkTwo);
+
+function myFunctionstatus(){
+ document.getElementById('one').src = linkOne;   
+ } 
+
+function myFunctiontatus(){  
+ document.getElementById('two').src = linkTwo; 
+ } 
+ 
+ myFunctionstatus()
+ myFunctiontatus()
+ function myFunction() {
+        var srcd = document.getElementById("two").src;
+
+        $.ajax({
+          type: "POST", //type of method
+          url: "https://therealj.heliohost.us/file.php", //your page
+          data: {
+            src: srcd
+          }, // passing the values
+          success: function(res) {
+            console.log(srcd)
+            location.reload(); //do what you want here...
+
+          }
+
+        });
+      }
+
+      function myFunctionz() {
+        var srcd = document.getElementById("one").src;
+
+        $.ajax({
+          type: "POST", //type of method
+          url: "https://therealj.heliohost.us/file.php", //your page
+          data: {
+            src: srcd
+          }, // passing the values
+          success: function(res) {
+            console.log(srcd)
+            location.reload();//do what you want here...
+    
+          }
+
+        });
+      }
+
+  </script>
+    <center>
+    Enter <code>Ctrl + R</code>, or refresh the page for new pictures.<br>
+    Use <code>right-arrow</code>, or <code>a</code> to vote for Option A.<br>
+    Use <code>left-arrow</code>, or <code>d</code> to vote for Option B.
+    </center>
+ 
+</body>
+</html>
