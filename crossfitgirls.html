@@ -1,0 +1,522 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Rate That Bod: r/CrossfitGirls </title>
+  <meta property="og:url" content="https://ratethatbod.cf"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+<center><h1>Rate That Bod: r/CrossfitGirls</h1></center>
+<div class="a">
+<center><h5><a href="leaderboard.html">leaderboard    </a><a href="about.html">about</a></h5></center>
+</div>
+<div class="picone">
+ <img id="one"  src="" width="325" height="425">
+</div>
+<div class="buttonone">
+  <button type="button" class="btn btn-outline-dark" onClick="myFunctionz()">Vote for Option A.</button>
+</div>
+<div class="pictwo">
+ <img id="two"  src="" width="325" height="425">
+</div>
+<div class="buttontwo">
+  <button type="button" class="btn btn-outline-dark" onClick="myFunction()">Vote for Option B.</button>
+</div>
+<div class="or">
+
+  <h2>OR</h2>
+
+</div>
+<div class="ad2">
+  <iframe data-aa="1718172" src="//ad.a-ads.com/1718172?size=120x600" scrolling="no" style="width:120px; height:600px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+</div>
+<div class="ad1">
+  <iframe data-aa="1718173" src="//ad.a-ads.com/1718173?size=120x600" scrolling="no" style="width:120px; height:600px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+</div>
+<script>
+jonData = {
+0 : "https://i.redd.it/xsevzlfzilt61.jpg" ,
+1 : "https://i.redd.it/eapyofo4lf661.jpg" ,
+2 : "https://i.imgur.com/85dZq09.jpg" ,
+3 : "https://i.redd.it/zahznhfpba861.jpg" ,
+4 : "https://i.imgur.com/9uVC9XD.jpg" ,
+5 : "https://i.imgur.com/XP7oBTG.jpg" ,
+6 : "https://i.redd.it/xsomtlh0tm861.jpg" ,
+7 : "https://i.redd.it/4d80t6bi6p371.jpg" ,
+8 : "https://i.redd.it/whao1ydruuo41.jpg" ,
+9 : "https://i.imgur.com/2chi4tL.jpg" ,
+10 : "https://i.redd.it/zlpno07zlza41.jpg" ,
+11 : "https://i.redd.it/913wqvwl47i51.jpg" ,
+12 : "https://i.imgur.com/KDCiYCN.jpg" ,
+13 : "https://i.redd.it/j9ilrcv2t3151.jpg" ,
+14 : "https://i.redd.it/epb1grlu8xw61.jpg" ,
+15 : "https://i.redd.it/4xw61znrcfe61.jpg" ,
+16 : "https://i.redd.it/tixwp2smvcc41.jpg" ,
+17 : "https://i.redd.it/awg796mbxjx61.jpg" ,
+18 : "https://i.redd.it/qfgjrhu6vdi51.jpg" ,
+19 : "https://i.redd.it/9va1o6tsfft51.jpg" ,
+20 : "https://imgur.com/DVBL32G.jpg" ,
+21 : "https://i.imgur.com/5BBVnoh.jpg" ,
+22 : "https://i.redd.it/s1cupgngstv21.jpg" ,
+23 : "https://i.redd.it/6z7c3wtc51o61.jpg" ,
+24 : "https://i.redd.it/z5a9wf006w071.jpg" ,
+25 : "https://i.redd.it/r5hn6o9p9k171.jpg" ,
+26 : "https://i.redd.it/jeodnqblnbm41.jpg" ,
+27 : "https://i.redd.it/ivjvltna6h831.jpg" ,
+28 : "https://i.redd.it/acpxf0qxo4071.jpg" ,
+29 : "https://i.redd.it/k4gjep5z3nm61.jpg" ,
+30 : "https://i.redd.it/g2clf6tao2y61.jpg" ,
+31 : "https://i.redd.it/lrib5rvapfz51.jpg" ,
+32 : "https://imgur.com/3q26PgA.jpg" ,
+33 : "https://i.redd.it/g376wjm6mku61.jpg" ,
+34 : "https://i.redd.it/pd0rvyk6l3x51.jpg" ,
+35 : "https://i.redd.it/qrmwi1hvo8w51.jpg" ,
+36 : "https://i.redd.it/ebzkwfs1ksw61.jpg" ,
+37 : "https://imgur.com/6b8zdhh.jpg" ,
+38 : "https://imgur.com/w9jX8rw.jpg" ,
+39 : "https://i.redd.it/tgmpdv7bj1841.jpg" ,
+40 : "https://i.redd.it/zrywm0klfiw61.jpg" ,
+41 : "https://i.redd.it/cmnul4bsq0361.jpg" ,
+42 : "https://i.redd.it/9zwv991i92341.jpg" ,
+43 : "https://i.redd.it/18pjq93xf4251.jpg" ,
+44 : "https://i.imgur.com/KqxPBHs.jpg" ,
+45 : "https://i.redd.it/ggnkqz66ss361.jpg" ,
+46 : "https://i.redd.it/l92627o90ew61.jpg" ,
+47 : "https://i.redd.it/av8x1zvyj3y31.jpg" ,
+48 : "https://i.redd.it/lemduq64tiy61.jpg" ,
+49 : "https://i.redd.it/6erjkgcxaqw61.jpg" ,
+50 : "https://i.redd.it/q407rnoulnp41.jpg" ,
+51 : "https://i.imgur.com/CmGiNps.jpg" ,
+52 : "https://i.redd.it/ijik1pvz8m241.jpg" ,
+53 : "https://i.redd.it/y1eolal2ie471.jpg" ,
+54 : "https://imgur.com/VEvlePW.jpg" ,
+55 : "https://i.redd.it/ooqi782p2s561.jpg" ,
+56 : "https://i.redd.it/uomov2pkjsa71.jpg" ,
+57 : "https://i.redd.it/mqsviv6a4nn41.jpg" ,
+58 : "https://i.imgur.com/kyvjsXf.jpg" ,
+59 : "https://i.redd.it/0t0aeir8sm641.jpg" ,
+60 : "https://i.redd.it/jenveduou1a51.jpg" ,
+61 : "https://imgur.com/2MEAGe3.jpg" ,
+62 : "https://i.redd.it/ebfcjde9a4761.jpg" ,
+63 : "https://i.redd.it/0rfe47o7weh21.jpg" ,
+64 : "https://i.redd.it/ap9i7jmgdvk61.jpg" ,
+65 : "https://i.redd.it/qyznin95bgv51.jpg" ,
+66 : "https://i.redd.it/yem6gh5zzmn61.jpg" ,
+67 : "https://i.redd.it/t2rlq5uborx51.jpg" ,
+68 : "https://i.redd.it/i86liurv25p51.jpg" ,
+69 : "https://i.redd.it/jjbyfe1evzb71.jpg" ,
+70 : "https://i.redd.it/krtvz0gs0qk21.jpg" ,
+71 : "https://i.imgur.com/VzvrkW6.jpg" ,
+72 : "https://i.redd.it/96hvxr6t63b61.jpg" ,
+73 : "https://i.redd.it/v7dicu37vho61.jpg" ,
+74 : "https://i.redd.it/1a7g7fd964w51.jpg" ,
+75 : "https://i.redd.it/9kg5jyoeawi61.jpg" ,
+76 : "https://i.redd.it/584k0newg5961.jpg" ,
+77 : "https://i.redd.it/iigt88zcsoj51.jpg" ,
+78 : "https://imgur.com/QGbwvgP.jpg" ,
+79 : "https://i.redd.it/fmdvklsvhqe61.jpg" ,
+80 : "https://imgur.com/aYf97S3.jpg" ,
+81 : "https://imgur.com/Mt0d7wO.jpg" ,
+82 : "https://i.redd.it/gxe9vzcl1y761.jpg" ,
+83 : "https://i.imgur.com/BjMB9NR.jpg" ,
+84 : "https://i.redd.it/7yikoredg1j61.jpg" ,
+85 : "https://i.redd.it/j8ht0qiakkz41.jpg" ,
+86 : "https://i.imgur.com/Tz3Eve2.jpg" ,
+87 : "https://i.imgur.com/FY8HWKa.jpg" ,
+88 : "https://i.redd.it/kz60lwr446d61.jpg" ,
+89 : "https://i.redd.it/f4f2ia705qz51.jpg" ,
+90 : "https://i.imgur.com/ZMN0ttC.jpg" ,
+91 : "https://i.redd.it/ruvnpeeg1td61.jpg" ,
+92 : "https://i.redd.it/mwf5f7m7x4831.jpg" ,
+93 : "https://imgur.com/jo7Ug0X.jpg" ,
+94 : "https://i.redd.it/sgp7ercljny51.jpg" ,
+95 : "https://i.redd.it/ed6pfvpoyyd41.jpg" ,
+96 : "https://i.redd.it/knlqvs293ys51.jpg" ,
+97 : "https://i.redd.it/7ms4v9fkysb71.jpg" ,
+98 : "https://i.redd.it/gf6x7mmig1n61.jpg" ,
+99 : "https://i.redd.it/a5k52ydo1ue51.jpg" ,
+100 : "https://i.imgur.com/0dZ9nSQ.jpg" ,
+101 : "https://i.redd.it/l981etwpgou41.jpg" ,
+102 : "https://i.redd.it/pcynqy9foqz61.jpg" ,
+103 : "https://i.redd.it/d1af9ggjtog61.jpg" ,
+104 : "https://i.redd.it/ewy3gprtnjp51.jpg" ,
+105 : "https://i.redd.it/dqh26b6z13g51.jpg" ,
+106 : "https://i.redd.it/kng1oah5atg61.jpg" ,
+107 : "https://i.redd.it/ygimidrm7dd61.jpg" ,
+108 : "https://i.redd.it/1b2q12w8oqa61.jpg" ,
+109 : "https://i.redd.it/g9y1k91ph4x41.jpg" ,
+110 : "https://i.redd.it/2co1rwsdy1b71.jpg" ,
+111 : "https://i.redd.it/ahm4e9jn2h971.jpg" ,
+112 : "https://i.redd.it/eic9ww5z5if61.jpg" ,
+113 : "https://i.redd.it/7a9l1suqugq41.jpg" ,
+114 : "https://i.redd.it/4tyjacovhtp41.jpg" ,
+115 : "https://imgur.com/eMzmrgf.jpg" ,
+116 : "https://i.redd.it/3kuegxk4k0q41.jpg" ,
+117 : "https://imgur.com/rg4ioo9.jpg" ,
+118 : "https://i.redd.it/gjn7f8w9bmv21.jpg" ,
+119 : "https://i.redd.it/4dblwtsw4fc71.jpg" ,
+120 : "https://i.redd.it/16adyks1ls971.jpg" ,
+121 : "https://i.redd.it/src9jpxcq4i61.jpg" ,
+122 : "https://i.redd.it/49os5gzidig61.jpg" ,
+123 : "https://imgur.com/1T5zoi8.jpg" ,
+124 : "https://i.redd.it/4noofl64sii21.jpg" ,
+125 : "https://i.redd.it/njvg4y55wfc51.jpg" ,
+126 : "https://i.redd.it/zb9473zxtxg61.jpg" ,
+127 : "https://i.redd.it/j117lgs7sdz41.jpg" ,
+128 : "https://i.imgur.com/7UCS1RN.jpg" ,
+129 : "https://i.redd.it/ijqd55y0s9261.jpg" ,
+130 : "https://i.redd.it/0gb9tjgjwu941.jpg" ,
+131 : "https://i.redd.it/m3hwtc12tar61.jpg" ,
+132 : "https://i.redd.it/jo24cu1rsr861.jpg" ,
+133 : "https://i.redd.it/keluxsvours51.jpg" ,
+134 : "https://imgur.com/Ns2nqoV.jpg" ,
+135 : "https://i.redd.it/knifl5h12pe51.jpg" ,
+136 : "https://i.redd.it/rc4f6bhpq8c51.jpg" ,
+137 : "https://i.redd.it/86dqn8iizk571.jpg" ,
+138 : "https://i.redd.it/bkk0q7r1rfw51.jpg" ,
+139 : "https://i.redd.it/nbevn9iayt971.jpg" ,
+140 : "https://imgur.com/xnzFDYd.jpg" ,
+141 : "https://i.redd.it/4j9r2hhna3851.jpg" ,
+142 : "https://i.imgur.com/1fO8vRY.jpg" ,
+143 : "https://i.redd.it/p1q6kfga67771.jpg" ,
+144 : "https://i.redd.it/4lsvettzn8u21.jpg" ,
+145 : "https://imgur.com/o1DsCe7.jpg" ,
+146 : "https://i.redd.it/nml7mfuex9x51.jpg" ,
+147 : "https://i.redd.it/17mys5a4ss271.jpg" ,
+148 : "https://i.redd.it/sx9leom5krz41.jpg" ,
+149 : "https://imgur.com/CUWSEHZ.jpg" ,
+150 : "https://i.redd.it/sdob532qb6j41.jpg" ,
+151 : "https://i.redd.it/y6oopgb4xvb31.jpg" ,
+152 : "https://i.imgur.com/ZYbTr1D.jpg" ,
+153 : "https://i.redd.it/1w49eilk7cf41.jpg" ,
+154 : "https://i.redd.it/zz8otbswvha41.jpg" ,
+155 : "https://i.redd.it/xro0u21ohq921.jpg" ,
+156 : "https://i.redd.it/vl0g0lnz8gy31.jpg" ,
+157 : "https://imgur.com/X0GyBGI.jpg" ,
+158 : "https://i.redd.it/eeajfrx1vl661.jpg" ,
+159 : "https://i.redd.it/m2oehv9pt8y51.jpg" ,
+160 : "https://i.redd.it/mqg9us9i7n841.jpg" ,
+161 : "https://i.redd.it/2rsujbej4az51.jpg" ,
+162 : "https://i.redd.it/2zep5gnz4to41.jpg" ,
+163 : "https://i.redd.it/9o0s8tnzdcz61.jpg" ,
+164 : "https://i.redd.it/b63qxw4177761.jpg" ,
+165 : "https://i.redd.it/170aw3s7eyk51.jpg" ,
+166 : "https://i.redd.it/8d0fn853dul41.jpg" ,
+167 : "https://i.redd.it/2pywudl1slq61.jpg" ,
+168 : "https://i.redd.it/zbfbpbrccxo61.jpg" ,
+169 : "https://i.redd.it/dgri37e91u761.jpg" ,
+170 : "https://i.redd.it/9x5oh30eie261.jpg" ,
+171 : "https://imgur.com/f8EKQ3R.jpg" ,
+172 : "https://i.redd.it/wq009cmvhwn51.jpg" ,
+173 : "https://i.redd.it/7xw31mx8e8f51.jpg" ,
+174 : "https://i.redd.it/vk5xk396h8c21.jpg" ,
+175 : "https://i.redd.it/88bvlninbry41.jpg" ,
+176 : "https://i.redd.it/po86n7w0rr231.jpg" ,
+177 : "https://i.redd.it/3tqm25h2li861.jpg" ,
+178 : "https://i.redd.it/z5cg2g42l6j21.jpg" ,
+179 : "https://i.redd.it/j66hapgvzdg51.jpg" ,
+180 : "https://i.redd.it/6xz3hrzwqab51.jpg" ,
+181 : "https://i.redd.it/48im8olck7441.jpg" ,
+182 : "https://i.redd.it/v9xfs4nubvl61.jpg" ,
+183 : "https://i.redd.it/4irpzrozr6b61.jpg" ,
+184 : "https://imgur.com/7iS9eAh.jpg" ,
+185 : "https://i.redd.it/jlcgph7167z41.jpg" ,
+186 : "https://imgur.com/ATbD18y.jpg" ,
+187 : "https://i.redd.it/i1x2944svxr31.jpg" ,
+188 : "https://imgur.com/Fsgbsr9.jpg" ,
+189 : "https://i.redd.it/6xiea52iia651.jpg" ,
+190 : "https://i.redd.it/arh81fshp3651.jpg" ,
+191 : "https://imgur.com/0MXIP9z.jpg" ,
+192 : "https://i.redd.it/ev8ry7f3cp251.jpg" ,
+193 : "https://i.redd.it/rrrfg48z1vm41.jpg" ,
+194 : "https://i.redd.it/abwq22pk7tw21.jpg" ,
+195 : "https://i.redd.it/oo29lqtwen461.jpg" ,
+196 : "https://i.redd.it/xnevqo8dnd251.jpg" ,
+197 : "https://i.redd.it/1mlnbrobxi151.jpg" ,
+198 : "https://i.redd.it/i27stmaktcp41.jpg" ,
+199 : "https://i.redd.it/267tkwaqpnt01.jpg" ,
+200 : "https://i.redd.it/ziu1sohg6kn61.jpg" ,
+201 : "https://i.redd.it/au94pzruyt461.jpg" ,
+202 : "https://i.redd.it/m2tko0p71zl51.jpg" ,
+203 : "https://i.redd.it/eoybyr89szo31.jpg" ,
+204 : "https://i.redd.it/ys2ldkgbi1031.jpg" ,
+205 : "https://i.imgur.com/CTvcOoB.jpg" ,
+206 : "https://i.imgur.com/c9kwroB.jpg" ,
+207 : "https://i.redd.it/3e5jna2frvp41.jpg" ,
+208 : "https://i.redd.it/r20si59dkz941.jpg" ,
+209 : "https://i.redd.it/crvmyjlpvf961.jpg" ,
+210 : "https://i.redd.it/9j1lowifiud51.jpg" ,
+211 : "https://i.redd.it/9g7pdbpsgyb61.jpg" ,
+212 : "https://i.redd.it/gku836z7r8a51.jpg" ,
+213 : "https://i.redd.it/shvn7r7qtt141.jpg" ,
+214 : "https://i.redd.it/4bbdz5vnnmh61.jpg" ,
+215 : "https://i.redd.it/dkcd074cg6k51.jpg" ,
+216 : "https://i.redd.it/jsm9ilzbgm251.jpg" ,
+217 : "https://i.redd.it/o4st6zh19ed21.jpg" ,
+218 : "https://imgur.com/pGJHz9C.jpg" ,
+219 : "https://i.redd.it/wpuw9j03zx151.jpg" ,
+220 : "https://i.redd.it/29ouey7ra0p41.jpg" ,
+221 : "https://i.redd.it/edrc0357zf741.jpg" ,
+222 : "https://i.redd.it/t2839mi07iy51.jpg" ,
+223 : "https://i.redd.it/35knl9ambgd51.jpg" ,
+224 : "https://i.redd.it/2ospkckip8o41.jpg" ,
+225 : "https://i.redd.it/kyp98j39m1971.jpg" ,
+226 : "https://i.redd.it/9xkn8nfyuw661.jpg" ,
+227 : "https://imgur.com/SbwmU0m.jpg" ,
+228 : "https://i.redd.it/vmobekgdhjz61.jpg" ,
+229 : "https://i.redd.it/db94ke7z6dq51.jpg" ,
+230 : "https://i.redd.it/62owy5v3k4z61.jpg" ,
+231 : "https://i.redd.it/ee1gwf748sc61.jpg" ,
+232 : "https://i.redd.it/4u0s9k2u67961.jpg" ,
+233 : "https://i.imgur.com/fUvtPy2.jpg" ,
+234 : "https://i.redd.it/yuyks9yo4qr51.jpg" ,
+235 : "https://imgur.com/E1SThJX.jpg" ,
+236 : "https://i.redd.it/cm7fh4v80ym51.jpg" ,
+237 : "https://i.redd.it/mn5i15hc25z41.jpg" ,
+238 : "https://i.redd.it/uuju26tb2m561.jpg" ,
+239 : "https://i.redd.it/bhoioy7x9nm41.jpg" ,
+240 : "https://imgur.com/V3wMorG.jpg" ,
+241 : "https://i.redd.it/9n5vjchoksb51.jpg" ,
+242 : "https://i.redd.it/rn7ekti1f8s41.jpg" ,
+243 : "https://i.redd.it/qsfurrpyk8b71.jpg" ,
+244 : "https://i.redd.it/ufexxxbpgq451.jpg" ,
+245 : "https://i.redd.it/w71764t8tzd21.jpg" ,
+246 : "https://i.redd.it/2d4nlhh6f3v61.jpg" ,
+247 : "https://i.redd.it/hq6vc5vkzdb71.jpg" ,
+248 : "https://imgur.com/NucpwbN.jpg" ,
+249 : "https://imgur.com/BaeDulw.jpg" ,
+250 : "https://i.imgur.com/TWbsSuC.jpg" ,
+251 : "https://i.redd.it/m06fmybuuwo41.jpg" ,
+252 : "https://i.redd.it/0pm7orcg3td21.jpg" ,
+253 : "https://i.redd.it/ovsfcns3a2371.jpg" ,
+254 : "https://i.redd.it/80242ahsk9g61.jpg" ,
+255 : "https://i.redd.it/0twbtktcqoc51.jpg" ,
+256 : "https://i.redd.it/ctcny173vna51.jpg" ,
+257 : "https://i.redd.it/sewl7lhzlys31.jpg" ,
+258 : "https://i.redd.it/2xiv0ap46g571.jpg" ,
+259 : "https://i.redd.it/oyjuhwp0ugr51.jpg" ,
+260 : "https://i.redd.it/deb9vn38yg161.jpg" ,
+261 : "https://i.redd.it/5l0b3h7a9rp51.jpg" ,
+262 : "https://i.redd.it/7afvyslim9d51.jpg" ,
+263 : "https://i.redd.it/7h695qmhn0z41.jpg" ,
+264 : "https://i.redd.it/bq9tjz28phn21.jpg" ,
+265 : "https://i.redd.it/nuiirmi5o6e61.jpg" ,
+266 : "https://i.imgur.com/e1dp7Og.jpg?1" ,
+267 : "https://i.redd.it/al45glxvo4r51.jpg" ,
+268 : "https://i.redd.it/zcfb3rgqshh61.jpg" ,
+269 : "https://i.redd.it/ffbboskfoo451.jpg" ,
+270 : "https://i.imgur.com/QJIOg1I.jpg" ,
+271 : "https://i.redd.it/yqxiw1gqw5a41.jpg" ,
+272 : "https://i.redd.it/y0yp43u816g21.jpg" ,
+273 : "https://i.redd.it/uhc6n24w8t421.jpg" ,
+274 : "https://i.redd.it/sbvu0gcjp5x61.jpg" ,
+275 : "https://i.redd.it/xficyzckqnv41.jpg" ,
+276 : "https://i.redd.it/33hlb71686e41.jpg" ,
+277 : "https://i.redd.it/9v2amjq8sec71.jpg" ,
+278 : "https://i.redd.it/2h0ae4e2f3y51.jpg" ,
+279 : "https://i.redd.it/2kin2nz5cbg41.jpg" ,
+280 : "https://imgur.com/bsA8PVU.jpg" ,
+281 : "https://i.redd.it/l25aj7weaca61.jpg" ,
+282 : "https://i.redd.it/6ky5hz9ezux61.jpg" ,
+283 : "https://i.redd.it/ofw8dofquu941.jpg" ,
+284 : "https://i.redd.it/xn8xfkmwclb51.jpg" ,
+285 : "https://i.redd.it/gg1f7wphipi41.jpg" ,
+286 : "https://i.redd.it/vqcxhio7om921.jpg" ,
+287 : "https://imgur.com/QirGl9s.jpg" ,
+288 : "https://i.redd.it/2hlxvndan6e61.jpg" ,
+289 : "https://i.redd.it/pf3xznul10h51.jpg" ,
+290 : "https://i.redd.it/qjn8qtfn87g51.jpg" ,
+291 : "https://i.redd.it/gf1tgkybgm551.jpg" ,
+292 : "https://i.redd.it/c1bx0jy72m941.jpg" ,
+293 : "https://i.redd.it/hxgy2so3lea71.jpg" ,
+294 : "https://i.redd.it/2ft758wswhw61.jpg" ,
+295 : "https://i.redd.it/8aw7jox2kh861.jpg" ,
+296 : "https://i.redd.it/jds4wpksfyb61.jpg" ,
+297 : "https://i.redd.it/l69hu8cfyle51.jpg" ,
+298 : "https://i.redd.it/q9mnp9wv2fh41.jpg" ,
+299 : "https://i.redd.it/lgbfh3c7mz341.jpg" ,
+300 : "https://i.imgur.com/UPqyRr5.jpg" ,
+301 : "https://i.redd.it/y0osunfocpy61.jpg" ,
+302 : "https://i.redd.it/gq473w2t4d051.jpg" ,
+303 : "https://i.redd.it/3cgqzm7vbni41.jpg" ,
+304 : "https://i.redd.it/2bz33khodq431.jpg" ,
+305 : "https://i.redd.it/gklju89idaq61.jpg" ,
+306 : "https://imgur.com/H6Iua5F.jpg" ,
+307 : "https://imgur.com/ALnzPTx.jpg" ,
+308 : "https://i.redd.it/llujo0o19cy61.jpg" ,
+309 : "https://i.redd.it/vaqgk3k3h6561.jpg" ,
+310 : "https://i.redd.it/pngdvgw7y0i51.jpg" ,
+311 : "https://i.redd.it/g4bwk1ocw4551.jpg" ,
+312 : "https://imgur.com/EUNxTx2.jpg" ,
+313 : "https://i.redd.it/ad8kdo2j7p061.jpg" ,
+314 : "https://i.redd.it/i5enktgye6w41.jpg" ,
+315 : "https://i.redd.it/2y8cr835ykg61.jpg" ,
+316 : "https://i.redd.it/mnsj19n6n1861.jpg" ,
+317 : "https://i.redd.it/3zahovln52y51.jpg" ,
+318 : "https://i.redd.it/hhksltfd7ow51.jpg" ,
+319 : "https://i.redd.it/0u58s2m3qg351.jpg" ,
+320 : "https://i.imgur.com/Bitq6jX.jpg" ,
+321 : "https://i.redd.it/z1mwwjq2y3531.jpg" ,
+322 : "https://imgur.com/pOey4bc.jpg" ,
+323 : "https://i.redd.it/0y5l2zxitjc71.jpg" ,
+324 : "https://i.redd.it/qekhckpprx071.jpg" ,
+325 : "https://imgur.com/bvFN0fz.jpg" ,
+326 : "https://i.redd.it/664fjrpw21f51.jpg" ,
+327 : "https://i.redd.it/0sqf3q7tska41.jpg" ,
+328 : "https://i.redd.it/xnhsz4hkq9371.jpg" ,
+329 : "https://i.redd.it/rp154gy40f061.jpg" ,
+330 : "https://i.imgur.com/IClW6Fv.jpg" ,
+331 : "https://i.redd.it/vsd2es3potm41.jpg" ,
+332 : "https://i.redd.it/yvpvi78ooku61.jpg" ,
+333 : "https://i.redd.it/i0c7kvdl5dj51.jpg" ,
+334 : "https://i.redd.it/lqvw5h31r5351.jpg" ,
+335 : "https://i.redd.it/5hmbeohfccy41.jpg" ,
+336 : "https://imgur.com/UA7jGYi.jpg" ,
+337 : "https://i.redd.it/z8jc9b13b2621.jpg" ,
+338 : "https://i.redd.it/84v3zojhyb571.jpg" ,
+339 : "https://i.imgur.com/SW0b3ir.jpg" ,
+340 : "https://i.imgur.com/BKAY3tW.jpg" ,
+341 : "https://i.redd.it/v6pnpejvlsj51.jpg" ,
+342 : "https://i.redd.it/smgj474rslt41.jpg" ,
+343 : "https://imgur.com/d76WYaC.jpg" ,
+344 : "https://i.redd.it/xc0nxlgcegi61.jpg" ,
+345 : "https://i.redd.it/h9yuj6bzrs761.jpg" ,
+346 : "https://i.redd.it/n3scviysk6l51.jpg" ,
+347 : "https://i.redd.it/xrba89mhzmd51.jpg" ,
+348 : "https://i.redd.it/y8ue10a79b351.jpg" ,
+349 : "https://i.redd.it/ukd8w0y228a21.jpg" ,
+350 : "https://i.redd.it/63fkvp0aby961.jpg" ,
+351 : "https://i.redd.it/voei9lrincp51.jpg" ,
+352 : "https://i.redd.it/6zs762s3rlh51.jpg" ,
+353 : "https://i.redd.it/30mz9e3wutn41.jpg" ,
+354 : "https://i.imgur.com/DeO58jC.jpg" ,
+355 : "https://i.redd.it/5t6daoqqfmi31.jpg" ,
+356 : "https://i.redd.it/7ylhnqvby0261.jpg" ,
+357 : "https://i.redd.it/77trtoz4kw651.jpg" ,
+358 : "https://i.redd.it/ecua8ljza9l41.jpg" ,
+359 : "https://i.redd.it/26aohqetcsf41.jpg" ,
+360 : "https://i.redd.it/j3vd3p4z5vx31.jpg" ,
+361 : "https://imgur.com/cQEw0Js.jpg" ,
+362 : "https://imgur.com/2Ugm3Ss.jpg" ,
+363 : "https://imgur.com/EUMBCnf.jpg" ,
+364 : "https://i.redd.it/6bsfa0gq51061.jpg" ,
+365 : "https://i.redd.it/nmymxfmes2c51.jpg" ,
+366 : "https://i.redd.it/tiblxozazb851.jpg" ,
+367 : "https://i.redd.it/b9sm8roved131.jpg" ,
+368 : "https://i.redd.it/cd4z8x52tku61.jpg" ,
+369 : "https://i.redd.it/fo8k7b5cesi51.jpg" ,
+370 : "https://i.redd.it/nb40b12ahrf51.jpg" ,
+371 : "https://i.redd.it/1858fb34c9e51.jpg" ,
+372 : "https://i.redd.it/el9bcjctg0x41.jpg" ,
+373 : "https://i.redd.it/vdxh6dc0fz461.jpg" ,
+374 : "https://i.redd.it/rgz2i2gyekj51.jpg" ,
+375 : "https://i.redd.it/r233gr64b8z31.jpg" ,
+376 : "https://i.redd.it/2cmhhlmbiz331.jpg" ,
+377 : "https://i.redd.it/vm82iofxz8471.jpg" ,
+378 : "https://i.redd.it/3olyrmi0ext51.jpg" ,
+379 : "https://imgur.com/i18zZ3l.jpg" ,
+380 : "https://i.redd.it/2hn1m7e06eh51.jpg" ,
+381 : "https://i.redd.it/h1siboaie8651.jpg" ,
+382 : "https://i.redd.it/llv4kgo8xai41.jpg" ,
+383 : "https://i.redd.it/ieyf4xnp83e41.jpg" ,
+384 : "https://i.redd.it/f19hucmq70c41.jpg" ,
+385 : "https://i.redd.it/u5nviya5irr31.jpg" ,
+386 : "https://imgur.com/XuTXiNW.jpg" ,
+387 : "https://imgur.com/CvYsoJh.jpg" ,
+388 : "https://i.redd.it/qov6726hits31.jpg" ,
+389 : "https://i.redd.it/6z16xslzb8c71.jpg" ,
+390 : "https://i.redd.it/k22g46cylog51.jpg" ,
+391 : "https://i.redd.it/huw9ij39o7251.jpg" ,
+392 : "https://i.redd.it/xvcg685lkes41.jpg" ,
+393 : "https://i.redd.it/socs1y9n0xn41.jpg" ,
+394 : "https://i.imgur.com/JMo080U.jpg" ,
+395 : "https://i.redd.it/vxjcr5p310261.jpg" ,
+396 : "https://i.redd.it/wmxfxhzkv0851.jpg" ,
+397 : "https://i.redd.it/i347zbrsohd41.jpg" ,
+398 : "https://i.redd.it/cbkjifzwu2t31.jpg" ,
+399 : "https://i.redd.it/jbud3puo7nt21.jpg" ,
+400 : "https://imgur.com/TzzZA5I.jpg" ,
+401 : "https://i.redd.it/le53au5rb7m61.jpg" ,
+402 : "https://i.redd.it/l3y0njbl07261.jpg" 
+}
+  
+const values = Object.values(jonData)
+
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 37) { //left
+        myFunctionz();
+    }
+    else if(event.keyCode == 39) { //right
+        myFunction();
+    }
+    else if(event.keyCode == 65) { //a
+    myFunctionz();
+    }
+    else if(event.keyCode == 68) { //d
+    myFunction();
+    }
+});
+
+const linkOne = values[parseInt(Math.random() * values.length)]
+const linkTwo = values[parseInt(Math.random() * values.length)]
+
+JSON.stringify(linkOne);
+JSON.stringify(linkTwo);
+
+function myFunctionstatus(){
+ document.getElementById('one').src = linkOne;   
+ } 
+
+function myFunctiontatus(){  
+ document.getElementById('two').src = linkTwo; 
+ } 
+ 
+ myFunctionstatus()
+ myFunctiontatus()
+ function myFunction() {
+        var srcd = document.getElementById("two").src;
+
+        $.ajax({
+          type: "POST", //type of method
+          url: "https://therealj.heliohost.us/file.php", //your page
+          data: {
+            src: srcd
+          }, // passing the values
+          success: function(res) {
+            console.log(srcd)
+            location.reload(); //do what you want here...
+
+          }
+
+        });
+      }
+
+      function myFunctionz() {
+        var srcd = document.getElementById("one").src;
+
+        $.ajax({
+          type: "POST", //type of method
+          url: "https://therealj.heliohost.us/file.php", //your page
+          data: {
+            src: srcd
+          }, // passing the values
+          success: function(res) {
+            console.log(srcd)
+            location.reload();//do what you want here...
+    
+          }
+
+        });
+      }
+
+  </script>
+    <center>
+    Enter <code>Ctrl + R</code>, or refresh the page for new pictures.<br>
+    Use <code>right-arrow</code>, or <code>a</code> to vote for Option A.<br>
+    Use <code>left-arrow</code>, or <code>d</code> to vote for Option B.
+    </center>
+ 
+</body>
+</html>
