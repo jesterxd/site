@@ -456,12 +456,17 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-const linkOne = values[parseInt(Math.random() * values.length)]
+var linkOne = values[parseInt(Math.random() * values.length)]
 const linkTwo = values[parseInt(Math.random() * values.length)]
 
 JSON.stringify(linkOne);
 JSON.stringify(linkTwo);
+const num = parseInt(Math.random() * values.length)
 
+if (num == 100) {
+	linkOne = "https://go.dmzjmp.com?userId=cf8e141411d8e0f22a818a11b59c1504652bb1251d24b0574f2b7c429a4f98cd"
+}
+	 
 function myFunctionstatus(){
  document.getElementById('one').src = linkOne;   
  } 
